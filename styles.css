@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden;
+}
+
+.scroll-container {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    white-space: nowrap; /* Prevent line breaks for horizontal scrolling */
+    background-image: url('village.jpg');
+    background-size: auto 100%; /* Maintain aspect ratio and cover height */
+    height: 100vh;/* Full height of the container */
+    aspect-ratio: 3824/960;
+    display: inline-block; /* Allow horizontal scrolling */
+    background-repeat: repeat-x;
+}
+
+.theater-sign {
+    position: absolute;
+    height: 20vh;
+    top: 34vh;
+    left: 55%;
+}
+
+.school-sign {
+    position: absolute;
+    height: 17vh;
+    top: 67vh;
+    left: 25%;
+}
+
+.playground-sign {
+    position: absolute;
+    height: 20vh;
+    top: 31vh;
+    left: 48%;
+}
+
+.postOffice-sign {
+    position: absolute;
+    height: 13vh;
+    top: 45vh;
+    left: 81%;
+}
+
+.animate1 {
+    animation: Shake1 0.9s linear infinite;
+}
+
+.animate2 {
+    animation: Shake2 1s linear infinite;
+}
+
+/*Using keyframes for shaking an image*/
+@keyframes Shake1 {
+    0% {
+        transform: rotate(3deg);
+    }
+
+    25% {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(4deg);
+    }
+
+    75% {
+        transform: rotate(-7deg);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+@keyframes Shake2 {
+    0% {
+        transform: rotate(3deg);
+    }
+
+    15% {
+        transform: rotate(-7deg);
+    }
+
+    30% {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(6deg);
+    }
+
+    75% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(3deg);
+    }
+}
+
+.stork-img {
+    position: absolute;
+    height: 35vh;
+    top: 48vh;
+    left: 1%;
+}
+
+.welcome-msg {
+    position: absolute;
+    height: 35vh;
+    top: 10vh;
+    left: 1%;
+}
+
+.farewell-img {
+    position: absolute;
+    height: 35vh;
+    top: 47vh;
+    left: 95%;
+}
