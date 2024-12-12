@@ -74,15 +74,15 @@ html, body {
 
 .first-guide-arrow {
     position: absolute;
-    height: 13vh;
-    top: 85vh;
+    height: 10vh;
+    top: 84vh;
     left: 3%;
 }
 
 .second-guide-arrow {
     position: absolute;
-    height: 13vh;
-    top: 85vh;
+    height: 10vh;
+    top: 84vh;
     left: 65%;
 }
 
