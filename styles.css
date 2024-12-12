@@ -29,6 +29,13 @@ html, body {
     left: 55%;
 }
 
+.school-sign-coachmark {
+    position: absolute;
+    height: 40vh;
+    top: 45vh;
+    left: 29%;
+}
+
 .school-sign {
     position: absolute;
     height: 17vh;
@@ -111,14 +118,54 @@ html, body {
     position: absolute;
     height: 35vh;
     top: 48vh;
-    left: 1%;
+    left: 0.5%;
+}
+
+.guide-arrow {
+    position: absolute;
+    height: 13vh;
+    top: 85vh;
+    left: 3%;
+}
+
+.fade-in-and-bounce {
+    -moz-animation: fadeIn 10s forwards, bounce 2s infinite;
+    -webkit-animation: fadeIn 10s forwards,bounce 2s infinite;
+    animation: fadeIn 10s forwards, bounce 2s infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-30px);
+    }
+    60% {
+        transform: translateX(-15px);
+    }
 }
 
 .welcome-msg {
     position: absolute;
     height: 35vh;
-    top: 10vh;
-    left: 1%;
+    top: 9vh;
+    left: 3%;
+}
+
+.fade-in {
+    -moz-animation: fadeIn 1s forwards;
+    -webkit-animation: fadeIn 1s forwards;
+    animation: fadeIn 1s forwards;
 }
 
 .farewell-img {
@@ -126,4 +173,11 @@ html, body {
     height: 35vh;
     top: 47vh;
     left: 95%;
+}
+
+.goodbye-msg {
+    position: absolute;
+    height: 36vh;
+    top: 9vh;
+    left: 86%;
 }
