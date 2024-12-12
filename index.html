@@ -9,7 +9,7 @@
 <body>
     <div class="scroll-container">
         <a><img src="stork.png" class="stork-img"></a>
-        <a><img src="welcome-msg.png" class="welcome-msg fade-in"></a>
+        <a><img src="welcome-msg.png" class="welcome-msg fast-fade-in"></a>
         <a><img id="guide-arrow" src="guide-arrow.png" class="guide-arrow fade-in-and-bounce"></a>
         <a id="postOffice" href="https://forms.gle/QmRUQMBKzFJAN7zFA" target="_blank"><img src="postOffice-sign.png" class="postOffice-sign animate2"></a>
         <a id="playground" href="https://forms.gle/rJCxsTQQn7hooUuN6" target="_blank"><img src="playground.png" class="playground-sign animate2"></a>
@@ -17,7 +17,7 @@
         <a id="school" href="https://forms.gle/2BWVA1casH7eHW2fA" target="_blank"><img src="school-sign.png" class="school-sign animate1"></a>
         <a id="theater" href="https://forms.gle/RGi38awDmjShyQRW6" target="_blank"><img src="theater-sign.png" class="theater-sign animate1"></a>
         <a><img src="farewell.png" class="farewell-img"></a>
-        <a><img src="goodbye-msg.png" class="goodbye-msg"></a>
+        <a><img src="goodbye-msg.png" class="goodbye-msg fade-in-when-visible"></a>
     </div>
 </body>
 <script>
@@ -25,7 +25,7 @@
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
+                entry.target.classList.add('slow-fade-in');
                 observer.unobserve(entry.target); // Stop observing after it becomes visible
             }
         });

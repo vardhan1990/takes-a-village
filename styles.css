@@ -162,10 +162,16 @@ html, body {
     left: 3%;
 }
 
-.fade-in {
+.fast-fade-in {
     -moz-animation: fadeIn 1s forwards;
     -webkit-animation: fadeIn 1s forwards;
     animation: fadeIn 1s forwards;
+}
+
+.slow-fade-in {
+    -moz-animation: fadeIn 5s forwards;
+    -webkit-animation: fadeIn 5s forwards;
+    animation: fadeIn 5s forwards;
 }
 
 .farewell-img {
