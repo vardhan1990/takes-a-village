@@ -72,11 +72,18 @@ html, body {
     left: 0.5%;
 }
 
-.guide-arrow {
+.first-guide-arrow {
     position: absolute;
     height: 13vh;
     top: 85vh;
     left: 3%;
+}
+
+.second-guide-arrow {
+    position: absolute;
+    height: 13vh;
+    top: 85vh;
+    left: 65%;
 }
 
 .fade-in-and-bounce {
