@@ -65,7 +65,87 @@ html, body {
     animation: Shake2 1s linear infinite;
 }
 
-/*Using keyframes for shaking an image*/
+.stork-img {
+    position: absolute;
+    height: 35vh;
+    top: 48vh;
+    left: 0.5%;
+}
+
+.guide-arrow {
+    position: absolute;
+    height: 13vh;
+    top: 85vh;
+    left: 3%;
+}
+
+.fade-in-and-bounce {
+    -moz-animation: fadeIn 2s forwards, bounce 2s infinite;
+    -webkit-animation: fadeIn 2s forwards,bounce 2s infinite;
+    animation: fadeIn 2s forwards, bounce 2s infinite;
+}
+
+.welcome-msg {
+    position: absolute;
+    height: 35vh;
+    width: 10%;
+    max-width: 500px;
+    top: 9vh;
+    left: 3%;
+}
+
+.fast-fade-in {
+    -moz-animation: fadeIn 0.5s forwards;
+    -webkit-animation: fadeIn 0.5s forwards;
+    animation: fadeIn 0.5s forwards;
+}
+
+.slow-fade-in {
+    -moz-animation: fadeIn 2s forwards;
+    -webkit-animation: fadeIn 2s forwards;
+    animation: fadeIn 2s forwards;
+}
+
+.farewell-img {
+    position: absolute;
+    height: 35vh;
+    top: 49vh;
+    left: 95%;
+}
+
+.goodbye-msg {
+    position: absolute;
+    height: 36vh;
+    width: 10%;
+    max-width: 350px;
+    top: 14vh;
+    left: 87%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-30px);
+    }
+    60% {
+        transform: translateX(-15px);
+    }
+}
+
 @keyframes Shake1 {
     0% {
         transform: rotate(3deg);
@@ -112,78 +192,4 @@ html, body {
     100% {
         transform: rotate(3deg);
     }
-}
-
-.stork-img {
-    position: absolute;
-    height: 35vh;
-    top: 48vh;
-    left: 0.5%;
-}
-
-.guide-arrow {
-    position: absolute;
-    height: 13vh;
-    top: 85vh;
-    left: 3%;
-}
-
-.fade-in-and-bounce {
-    -moz-animation: fadeIn 10s forwards, bounce 2s infinite;
-    -webkit-animation: fadeIn 10s forwards,bounce 2s infinite;
-    animation: fadeIn 10s forwards, bounce 2s infinite;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateX(0);
-    }
-    40% {
-        transform: translateX(-30px);
-    }
-    60% {
-        transform: translateX(-15px);
-    }
-}
-
-.welcome-msg {
-    position: absolute;
-    height: 35vh;
-    top: 9vh;
-    left: 3%;
-}
-
-.fast-fade-in {
-    -moz-animation: fadeIn 1s forwards;
-    -webkit-animation: fadeIn 1s forwards;
-    animation: fadeIn 1s forwards;
-}
-
-.slow-fade-in {
-    -moz-animation: fadeIn 5s forwards;
-    -webkit-animation: fadeIn 5s forwards;
-    animation: fadeIn 5s forwards;
-}
-
-.farewell-img {
-    position: absolute;
-    height: 35vh;
-    top: 47vh;
-    left: 95%;
-}
-
-.goodbye-msg {
-    position: absolute;
-    height: 36vh;
-    top: 9vh;
-    left: 86%;
 }
