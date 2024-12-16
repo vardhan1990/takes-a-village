@@ -108,9 +108,9 @@ html, body {
 }
 
 .slow-fade-in {
-    -moz-animation: fadeIn 2s forwards;
-    -webkit-animation: fadeIn 2s forwards;
-    animation: fadeIn 2s forwards;
+    -moz-animation: fadeIn 1s forwards;
+    -webkit-animation: fadeIn 1s forwards;
+    animation: fadeIn 1s forwards;
 }
 
 .farewell-img {
