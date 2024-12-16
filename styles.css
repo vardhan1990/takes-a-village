@@ -95,8 +95,6 @@ html, body {
 .welcome-msg {
     position: absolute;
     height: 35vh;
-    width: 10%;
-    max-width: 500px;
     top: 9vh;
     left: 3%;
 }
@@ -123,10 +121,8 @@ html, body {
 .goodbye-msg {
     position: absolute;
     height: 36vh;
-    width: 10%;
-    max-width: 350px;
     top: 14vh;
-    left: 87%;
+    left: 85%;
 }
 
 @keyframes fadeIn {
